@@ -1,0 +1,303 @@
+{
+  "Pagamento": [
+    {
+      "id": "1",
+      "nome": "Mastercard",
+      "numero": "1234-5678-9012-3456",
+      "expiração": "12/2025",
+      "cvv": "123",
+      "metodoPagamento": "Crédito"
+    },
+    {
+      "id": "8267",
+      "nome": "Maria",
+      "numero": "18526498414",
+      "expiracao": "12/2027",
+      "cvv": "500",
+      "metodoPagamento": "Débito"
+    },
+    {
+      "id": "e452",
+      "nome": "Elisa",
+      "numero": "15264587123654",
+      "expiracao": "12/28",
+      "cvv": "152",
+      "metodoPagamento": "Crédito"
+    },
+    {
+      "id": "01bb",
+      "nome": "Julia",
+      "numero": "15236479862329",
+      "expiracao": "12/59",
+      "cvv": "875",
+      "metodoPagamento": "Crédito"
+    },
+    {
+      "id": "1a29",
+      "nome": "silmara",
+      "numero": "15236596",
+      "expiracao": "08/25",
+      "cvv": "214",
+      "metodoPagamento": "Crédito"
+    }
+  ],
+  "Quizz": [
+    {
+      "id": "1",
+      "alergia": "sim",
+      "qualAlergia": "Amendoim",
+      "dieta": "sim",
+      "qualDieta": "vegana",
+      "condição": "sim",
+      "qualCondição": "diabetes",
+      "lactose": "sim",
+      "acordar": "08:00",
+      "almoçar": "12:00",
+      "dormir": "00:00"
+    },
+    {
+      "id": "aba3",
+      "alergia": "Não",
+      "qualAlergia": "",
+      "dieta": "Não",
+      "qualDieta": "",
+      "condicao": "Sim",
+      "qualCondicao": "Hipertensão",
+      "lactose": "Não",
+      "acordar": "05:00",
+      "almocar": "06:00",
+      "dormir": "07:00"
+    },
+    {
+      "id": "ad3a",
+      "alergia": "Não",
+      "qualAlergia": "",
+      "dieta": "Não",
+      "qualDieta": "",
+      "condicao": "Sim",
+      "qualCondicao": "Diabetes",
+      "lactose": "",
+      "acordar": "",
+      "almocar": "",
+      "dormir": ""
+    },
+    {
+      "id": "b7d7",
+      "alergia": "Sim",
+      "qualAlergia": "",
+      "dieta": "Não",
+      "qualDieta": "jgjg",
+      "condicao": "Não",
+      "qualCondicao": "ghjk",
+      "lactose": "Sim",
+      "acordar": "15:53",
+      "almocar": "05:23",
+      "dormir": "03:05"
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "email": "user@example.com",
+      "password": "password123",
+      "age": "30",
+      "phone": "123456789"
+    },
+    {
+      "id": "39f9",
+      "email": "1528674@sga.pucminas.br",
+      "password": "12345678",
+      "age": "18",
+      "phone": "45"
+    },
+    {
+      "id": "a409",
+      "email": "resendevieiramariaelisa@gmail.com",
+      "password": "Me020605",
+      "age": "19",
+      "phone": "3196647136"
+    },
+    {
+      "id": "f087",
+      "email": "julia123@gmail.com",
+      "password": "1234",
+      "age": "12",
+      "phone": "12356788"
+    },
+    {
+      "id": "9e5d",
+      "email": "teste@gmail.com",
+      "password": "teste02",
+      "age": "56",
+      "phone": "6563464634"
+    },
+    {
+      "id": "77fb",
+      "email": "teste@gmail.com",
+      "password": "teste02",
+      "age": "56",
+      "phone": "6563464634"
+    },
+    {
+      "id": "9900",
+      "email": "testeagora@gmail.com",
+      "password": "123",
+      "age": "15",
+      "phone": "56454644636"
+    },
+    {
+      "id": "dfa3",
+      "email": "silvana@gmail.com",
+      "password": "MariaElisa",
+      "age": "15",
+      "phone": "48519641496"
+    },
+    {
+      "id": "3c5a",
+      "email": "fernando@gmail.com",
+      "password": "Me020605",
+      "age": "50",
+      "phone": "95237827878"
+    },
+    {
+      "id": "b095",
+      "email": "juliafernanda1378@gmail.com",
+      "password": "Eleniceferreira15",
+      "age": "19",
+      "phone": "31999520511"
+    }
+  ],
+  "CadastroNutri": [
+    {
+      "id": "1",
+      "nome": "Maria",
+      "sobrenome": "Resende",
+      "cpf": "16300347621",
+      "dataDeNascimento": "02/06/2005",
+      "endereco": "Rua A",
+      "email": "Maria@gmail.com",
+      "telefone": "996647136",
+      "crm": "1234",
+      "senha": "Mr0206"
+    },
+    {
+      "id": "ad69",
+      "nome": "Julia",
+      "sobrenome": "Fernanda",
+      "cpf": "6564515212",
+      "dataDeNascimento": "2024-06-25",
+      "endereco": "Rua V",
+      "email": "Rua seila",
+      "telefone": "3196664641636",
+      "crm": "1236645",
+      "senha": "Julia1234"
+    },
+    {
+      "id": "f443",
+      "nome": "wesley",
+      "sobrenome": "carvalho",
+      "cpf": "151516161",
+      "dataDeNascimento": "2024-06-25",
+      "endereco": "Rua Castro",
+      "email": "wesleymarciel@gmail.com",
+      "telefone": "5969495",
+      "crm": "9644",
+      "senha": "uaehf+56"
+    },
+    {
+      "id": "def9",
+      "nome": "u5e7",
+      "sobrenome": "87",
+      "cpf": "85785",
+      "dataDeNascimento": "2024-05-28",
+      "endereco": "joufkryu",
+      "email": "tuekuek",
+      "telefone": "tduku",
+      "crm": "tuekek",
+      "senha": "yk"
+    }
+  ],
+  "cadastro": [
+    {
+      "name": "João",
+      "email": "ztejd@example.com",
+      "cep": "12345",
+      "addres": "Rua A",
+      "date": "01/01/2000",
+      "time": "12:00",
+      "id": "1a2a"
+    },
+    {
+      "id": "14c4",
+      "name": "111111",
+      "email": "1111@111",
+      "cep": "31270020",
+      "address": "Rua Boaventura, Indaiá, Belo Horizonte - MG",
+      "date": "2024-06-27",
+      "time": "00:00"
+    },
+    {
+      "id": "0507",
+      "name": "Teste",
+      "email": "teste@gmal.com",
+      "cep": "32422130",
+      "address": "Rua Rosária Ferreira Campos, Cascata (Parque Durval de Barros), Ibirité - MG",
+      "date": "2024-06-19",
+      "time": "00:00"
+    },
+    {
+      "id": "2b70",
+      "name": "Professor",
+      "email": "professor@gmail.com",
+      "cep": "30640550",
+      "address": "Rua Arthur Lourenço, Barreiro, Belo Horizonte - MG",
+      "date": "2005-06-02",
+      "time": "22:20"
+    },
+    {
+      "id": "f842",
+      "name": "testeagora",
+      "email": "fjbksh@vbfcjbd",
+      "cep": "30640550",
+      "address": "Rua Arthur Lourenço, Barreiro, Belo Horizonte - MG",
+      "date": "2024-06-10",
+      "time": "02:55"
+    },
+    {
+      "id": "de7f",
+      "name": "teste16:33",
+      "email": "teste16@gmail.com",
+      "cep": "30640550",
+      "address": "Rua Arthur Lourenço, Barreiro, Belo Horizonte - MG",
+      "date": "2024-07-02",
+      "time": "12:56"
+    },
+    {
+      "id": "6ef0",
+      "name": "julia",
+      "email": "juliafernanda1378@gmail.com",
+      "cep": "32422-130",
+      "address": "Rua Rosária Ferreira Campos, Cascata (Parque Durval de Barros), Ibirité - MG",
+      "date": "2024-05-23",
+      "time": "15:30"
+    }
+  ],
+  "Usuarios": [
+    {
+      "nome": "Luiza",
+      "email": "luiza123@gmail.com",
+      "Telefone": "9897866",
+      "Idade": "12",
+      "senha": "Mr3206",
+      "id": "fbab"
+    },
+    {
+      "id": "bccc",
+      "name": "lucass",
+      "email": "1354@gmailcom",
+      "age": "12",
+      "phone": "21345678909",
+      "password": "1247"
+    }
+  ]
+}
