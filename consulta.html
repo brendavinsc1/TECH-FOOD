@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamento com Nutricionista</title>
+    <link rel="stylesheet" href="consulta.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+        <h1>Agende sua Consulta com Nutricionista</h1>
+        <a href="inicial.html" class="btnMenu">Menu</a>
+        </div>
+         
+    </header>
+    <main>
+        
+        <form id="appointmentForm">
+            <div class="form-group">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="cep">CEP:</label>
+                <input type="text" id="cep" name="cep" required>
+            </div>
+            <div class="form-group">
+                <label for="address">Endereço:</label>
+                <input type="text" id="address" name="address" readonly>
+            </div>
+            <div class="form-group">
+                <label for="date">Data:</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+            <div class="form-group">
+                <label for="time">Hora:</label>
+                <input type="time" id="time" name="time" required>
+            </div>
+            <button type="submit" class="submit-btn">Agendar Consulta</button>
+           
+        </form>
+        <div id="confirmation" class="hidden">
+            <h2>Consulta Agendada com Sucesso!</h2>
+            <p id="details"></p>
+        </div>
+    </main>
+     
+    <script>
+        document.getElementById('cep').addEventListener('input', async function() {
+            const cep = this.value.replace(/\D/g, '');
+            if (cep.length === 8) {
+                const address = await fetchAddress(cep);
+                if (address) {
+                    document.getElementById('address').value = `${address.logradouro}, ${address.bairro}, ${address.localidade} - ${address.uf}`;
+                } else {
+                    document.getElementById('address').value = '';
+                    alert('CEP inválido. Por favor, insira um CEP válido.');
+                }
+            }
+        });
+
+        document.getElementById('appointmentForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const cep = document.getElementById('cep').value;
+            const address = document.getElementById('address').value;
+            const date = document.getElementById('date').value;
+            const time = document.getElementById('time').value;
+
+            const details = `Nome: ${name}\nEmail: ${email}\nCEP: ${cep}\nEndereço: ${address}\nData: ${date}\nHora: ${time}`;
+
+            document.getElementById('details').textContent = details;
+            document.getElementById('appointmentForm').reset(); // Limpa o formulário após o envio
+            document.getElementById('appointmentForm').classList.add('hidden');
+            document.getElementById('confirmation').classList.remove('hidden');
+
+            // Envia os dados para o servidor
+            fetch('https://524a8a6c-954e-4fed-9768-78fd5c2c67fb-00-3q56sbf6na1w3.spock.replit.dev/cadastro', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ name, email, cep, address, date, time })
+            })
+            .then(response => response.json())
+            .then(data => {
+                console.log('Success:', data);
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+        });
+
+        async function fetchAddress(cep) {
+            const response = await fetch(`https://viacep.com.br/ws/${cep}/json/`);
+            if (response.ok) {
+                const data = await response.json();
+                return data.erro ? false : data;
+            } else {
+                return false;
+            }
+        }
+    </script>
+    <script src="consulta.js"></script>
+</body>
+</html>
