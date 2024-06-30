@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="login.css">
+    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet">
+</head>
+<body>
+ <section class="container forms">
+    <div class="form login">
+        <div class="form-content">
+            <header>Login</header>
+            <form action="#">
+                <div class="field input-field">
+                    <input id="login-email" type="email" placeholder="Email" class="input">
+                </div>
+                <div class="field input-field">
+                    <input id="login-password" type="password" placeholder="Password" class="password">
+                    <i class="bx bx-hide eye-icon"></i>
+                </div>
+                <div class="field button-field">
+                    <button id="login-button">Login</button>
+                </div>
+                <div class="form-link">
+                    <span>Não tem uma conta? </span><a href="#" class="link registro-link">Registre-se</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="form registro">
+        <div class="form-content">
+            <header>Registre-se</header>
+            <form action="#">
+                <div class="field input-field">
+                    <input id="register-email" type="email" placeholder="Email" class="input">
+                </div>
+                <div class="field input-field">
+                    <input id="register-password" type="password" placeholder="Password" class="password">
+                    <i class="bx bx-hide eye-icon"></i>
+                </div>
+                <div class="field input-field">
+                    <input id="register-age" type="number" placeholder="Idade" class="input">
+                </div>
+                <div class="field input-field">
+                    <input id="register-phone" type="tel" placeholder="Telefone" class="input">
+                </div>
+                <div class="field button-field">
+                    <button id="register-button">Registrar</button>
+                </div>
+                <div class="form-link">
+                    <span>Já tem uma conta? </span><a href="#" class="link login-link">Login</a>
+                </div>
+            </form>
+        </div>
+    </div>
+ </section>
+ <script src="login.js"></script>
+</body>
+</html>

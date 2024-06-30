@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #a9cf55;
+    background-image: url('imgsbren/imagemSalada.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 30px;
+}
+
+.form {
+    position: absolute;
+    max-width: 430px;
+    width: 100%;
+    padding: 30px;
+    border-radius: 7px;
+    background: #a9cf55;
+}
+
+.form.registro {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.forms.show-registro .form.registro {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.forms.show-registro .form.login {
+    opacity: 0;
+    pointer-events: none;
+}
+
+header {
+    font-size: 28px;
+    font-weight: 600;
+    color: #0b6100;
+    text-align: center;
+}
+
+form {
+    margin-top: 30px;
+}
+
+.field {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 7px;
+}
+
+.field button {
+    color: #a9cf55;
+    
+    background-color: #0b6100;
+    height: 100%;
+    width: 100%;
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 7px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.field button:hover {
+    
+    background-color: #4c6515;
+}
+
+.field input {
+    outline: none;
+    padding: 0 15px;
+    border: 1px solid #cacaca;
+    height: 100%;
+    width: 100%;
+    border: none;
+}
+
+.field input:focus {
+    border-bottom-width: 2px;
+}
+
+.eye-icon {
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #8b8b8b;
+    cursor: pointer;
+}
+
+.form-link {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.form-link span,
+.form-link a {
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: none;
+    color: rgb(1, 117, 1);
+}
+
+.form-content a:hover {
+    text-decoration: underline;
+}
+
+.linha {
+    height: 1px;
+    width: 100%;
+    margin: 36px 0;
+    background-color: green;
+    position: relative;
+}
+
+.linha::before {
+    content: "Ou";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgb(101, 250, 15);
+    color: black;
+    padding: 0 15px;
+}
+
+.opcoes-login {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.opcoes-login a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 7px;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.opcoes-login a.facebook {
+    background-color: #4267b2;
+    color: white;
+}
+
+.opcoes-login a.facebook .facebook-icon {
+    height: 28px;
+    width: 28px;
+    color: white;
+    font-size: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.opcoes-login a.google {
+    margin-top: 20px;
+    border: 1px solid #cacaca;
+    background-color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.opcoes-login a.google span {
+    font-weight: 500;
+    opacity: 0.6;
+    color: black;
+}
+
+@media screen and (max-width: 400px) {
+    .form {
+        padding: 15px;
+    }
+}
