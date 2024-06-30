@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Food</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #A8CE55; 
+            color: #fff;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            width: 70px;
+            height: auto; 
+        }
+        .login-btn {
+            background-color: #4c6515;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .login-btn:hover {
+            background-color: #3d5211; 
+        }
+        
+        .banner {
+            position: relative;
+            background-image: url('imgsbren/comendoVerdes.webp'); /* Imagem de fundo */
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            color: #fff;
+            padding: 200px 20px; /* Tamanho do banner para desktop */
+        }
+        @media (max-width: 768px) {
+            .banner {
+                padding: 150px 20px; /* Tamanho do banner para celular */
+            }
+        }
+        .banner::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5); 
+            z-index: 1;
+        }
+        .banner h1 {
+            margin-bottom: 20px;
+            position: relative;
+            z-index: 2;
+        }
+        .banner .banner-button {
+            background-color: #A8CE55;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            font-size: 18px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            position: relative;
+            z-index: 2;
+        }
+        .banner .banner-button:hover {
+            background-color: #8FBF3C;
+        }
+        
+        .section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .sobre-nos {
+            background-color: #f4f4f4;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img class="logo" src="imgsbren/Tech.jpg" alt="Logo">
+        <a href="login.html" class="login-btn">Login</a>
+    </header>
+
+    <!-- Banner -->
+    <div class="banner">
+        <h1>Descubra o caminho para uma alimentação saudável!</h1>
+        <button class="banner-button" onclick="window.location.href = 'login.html';">Comece aqui</button>
+    </div>
+
+    <!-- Seção Sobre Nós -->
+    <section id="sobre" class="section sobre-nos">
+        <h2>Sobre Nós</h2>
+        <p>Na Tech Food, estamos comprometidos em fornecer as melhores dicas e planos de alimentação saudável. Nossa missão é ajudar você a alcançar seus objetivos nutricionais com facilidade e praticidade, fornecendo recursos valiosos e suporte especializado.<br>
+        Entre em contato : <u style="color: #a9cf55; text-decoration-color: #a9cf55;">techfood23.25@gmail.com </u>
+        </p>
+    </section>
+</body>
+</html>
